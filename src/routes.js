@@ -1,18 +1,17 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createMemoryHistory, createRouter } from 'vue-router'
 
-import HomeView from "@/views/HomeView.vue";
-import GalleryView from "@/views/GalleryViewPaginated.vue";
-import MapView from "@/views/GeoMapView.vue";
-import AddView from "@/views/AddView.vue";
+import ListView from '@/components/ListView.vue'
+import MapView from '@/components/MapView.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
 
 const routes = [
-  { name: "home", path: "/", component: HomeView },
-  { name: "gallery", path: "/gallery", component: GalleryView },
-  { name: "map", path: "/map", component: MapView },
-  { name: "add", path: "/add", component: AddView },
-];
+    { name: 'home', path: '/', component: HelloWorld },
+    { name: 'list', path: '/list', component: ListView },
+    { name: 'map', path: '/map', component: MapView },
+]
 
 export const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+    history: createMemoryHistory(),
+    routes,
+})
+

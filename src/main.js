@@ -1,36 +1,24 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import PrimeVue from "primevue/config";
-import Aura from "@primevue/themes/aura";
-import "primeicons/primeicons.css";
-import { router } from "./routes";
-import { definePreset } from "@primevue/themes";
+import './assets/main.css'
 
-const app = createApp(App);
+import {createApp} from 'vue'
+import App from './App.vue'
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+import {router} from "./routes";
 
-const myPreset = definePreset(Aura, {
-  components: {
-    menubar: {
-      background: "#26b92e",
-      item: {
-        active: {
-          background: "darkblue",
-          color: "darkblue",
-        },
-      },
-    },
-  },
-});
+import 'primeicons/primeicons.css'
+import Menubar from "primevue/menubar";
+import Menu from "primevue/menu";
+
+const app = createApp(App)
 
 app.use(PrimeVue, {
-  theme: {
-    preset: myPreset,
-    options: {
-      darkModeSelector: false,
+    theme: {
+        preset: Aura
     },
-  },
-});
+    ripple: true,
+})
 
-app.use(router);
+app.use(router)
 
-app.mount("#app");
+app.mount('#app')
