@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+ToDo
+https://github.com/Leaflet/Leaflet.fullscreen
+https://github.com/CliffCloud/Leaflet.EasyButton maybe
+https://github.com/sephcoster/leaflet-hash?tab=readme-ov-file maybe

@@ -1,6 +1,7 @@
 {
   "name": "stickermap",
-  "version": "0.0.0",
+  "description": "Perist your memories of street art",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.15",
+    "@primevue/themes": "^4.2.5",
     "leaflet": "^1.9.4",
-    "leaflet.markercluster": "^1.5.3"
+    "leaflet.markercluster": "^1.5.3",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "vue": "^3.4.15",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
