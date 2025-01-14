@@ -28,6 +28,12 @@ npm run dev
 npm run build
 ```
 
+### Githooks
+For easier code-formatting, you can enable the 'pre-commit' githook by using:  
+```sh
+git config core.hooksPath '.githooks' 
+```
+
 ToDo
 https://github.com/Leaflet/Leaflet.fullscreen
 https://github.com/CliffCloud/Leaflet.EasyButton maybe

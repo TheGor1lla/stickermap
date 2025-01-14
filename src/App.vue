@@ -1,10 +1,10 @@
 <template>
   <div class="view">
     <nav class="navbar">
-      <Navbar/>
+      <Navbar />
     </nav>
     <main>
-      <RouterView/>
+      <RouterView />
     </main>
   </div>
 </template>
@@ -18,9 +18,9 @@ export default {
   components: {
     Navbar,
     Sidebar,
-    GeoMap
+    GeoMap,
   },
-}
+};
 </script>
 
 <style scoped>
