@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="view">
     <nav class="navbar">
       <Navbar/>
     </nav>
-    <main class="map">
+    <main>
       <RouterView/>
     </main>
   </div>
 </template>
 
 <script>
-import GeoMap from "@/components/GeoMap.vue";
-import Sidebar from "@/components/Sidebar.vue";
+import GeoMap from "@/views/GeoMapView.vue";
+import Sidebar from "@/views/GalleryView.vue";
 import Navbar from "@/components/Navbar.vue";
 
 export default {
@@ -24,28 +24,10 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: column;
+.view {
+  height: 100vh;
 }
-
 .navbar {
   z-index: -1;
-}
-
-.map {
-}
-
-
-
-
-.parent {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.child {
-  flex: 1;
 }
 </style>

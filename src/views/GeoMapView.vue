@@ -25,14 +25,14 @@ export default {
       }).addTo(geomap);
 
       const spraycan = L.icon({
-        iconUrl: "/spray-paint.png",
+        iconUrl: "/src/assets/icons/spray-paint.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
       });
 
       const sticker = L.icon({
-        iconUrl: "/sticker.png",
+        iconUrl: "/src/assets/icons/sticker.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
@@ -59,9 +59,7 @@ export default {
 
 <style scoped>
 #geomap {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100vh;
+  border-radius: 5px;
 }
 </style>
