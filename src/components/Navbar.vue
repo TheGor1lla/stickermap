@@ -33,8 +33,14 @@ export default {
         { label: "Home", icon: "pi pi-home", route: "/" },
         { label: "Gallery", icon: "pi pi-list", route: "/gallery" },
         { label: "Map", icon: "pi pi-map", route: "/map" },
+        { label: "Add", icon: "pi pi-plus", route: "/add" },
       ],
     };
   },
 };
 </script>
+<style scoped>
+.p-menubar {
+  margin-bottom: 5px;
+}
+</style>
