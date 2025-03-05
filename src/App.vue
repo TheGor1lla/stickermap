@@ -11,7 +11,7 @@
 
 <script>
 import GeoMap from "@/views/GeoMapView.vue";
-import Sidebar from "@/views/GalleryView.vue";
+import Sidebar from "@/views/GalleryViewPaginated.vue";
 import Navbar from "@/components/Navbar.vue";
 
 export default {
